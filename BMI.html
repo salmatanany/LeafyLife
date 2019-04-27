@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Leafy Life </title>
+    <link rel="stylesheet" href="home%20(1).css">
+    <link rel="icon" href="logo.png" type="text/css">
+    <script>
+        function calculateBmi() {
+            var weight = document.bmi.weight.value;
+            var height = document.bmi.height.value;
+            if (weight > 0 && height > 0) {
+                var yourbmi = weight / (height / 100 * height / 100);
+                document.bmi.bmi.value = yourbmi;
+                if (yourbmi < 18.5) {
+                    document.bmi.meaning.value = "You are too thin.";
+                }
+                if (yourbmi > 18.5 && yourbmi < 25) {
+                    document.bmi.meaning.value = "You are healthy.";
+                }
+                if (yourbmi > 25) {
+                    document.bmi.meaning.value = "You are overweight.";
+                }
+            } else {
+                alert("Please Fill in everything correctly");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+     <table id="navTable">
+        <tr>
+            <th class="topnav">
+
+                <a href="home%20(1).html">
+                    <img class="logo" src="logo.png" alt="Logo">
+                </a>
+
+            </th>
+            
+    </table>
+    <div class="active">
+        <a href=" home%20(1).html"> Home </a>
+        <a href="SignUp.html"> Sign Up </a>
+
+        <div class="dropdown">
+            <a href="Dietplans.html" class="dropbtn">Diet Plans</a>
+            <br> <br> <br>
+            <div class="dropdown-content">
+                <ul>
+                    <li> <a href="lowcarbs.html">LowCarbs</a></li>
+                    <li> <a href="ultralowfats.html">UltraLowFats</a></li>
+                    <li> <a href="paleo.html">Paleo</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+
+            <a href="Workouts.html" class="dropbtn">Workouts</a>
+            <br><br><br>
+            <div class="dropdown-content">
+                <ul>
+                    <li> <a href="Strength-workouts.html">Strength-Workouts</a></li>
+                    <li> <a href="Flexibitlity-workouts.html">Flexibiltity-Workouts</a></li>
+                    <li> <a href="Endurance-workouts.html">Endurance-Workouts</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <a href="BMI.html"> BMI Converter</a>
+        <a href=FAQ.html> FAQ </a>
+
+
+        <div> <input id="search" type="text" placeholder="Search.."> </div>
+    </div>
+    <br>
+
+
+    <div>
+        <img class="division3" src="wall.jpg" alt="health">
+
+    </div>
+
+    <div class="p11">
+
+        <p>Please enter the following:</p>
+        <br><br>
+        <form name="bmi">
+            Your Weight(kg): <input type="text" name="weight"><br><br>
+            Your Height(cm): <input type="text" name="height"><br><br>
+            <input class="BMIB" type="button" value="Calculate BMI" onClick="calculateBmi()"><br><br>
+            Your BMI: <input type="text" name="bmi" size="10"><br><br>
+            This Means: <input type="text" name="meaning" size="25"><br><br>
+            <input class= "BMIB" type="reset" value="Reset">
+        </form>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+
+
+
+        <table id="fo"><tr>
+            <td>
+                <a href="home%20(1).html"><img class="foot" src="logo.png" alt="logo"></a>
+
+            </td>
+            <td>
+                &nbsp; <a class="bottom" href="home%20(1).html">Home</a> &nbsp;
+                <br>
+                <br>
+                &nbsp; <a class="bottom" href="Dietplans.html">Diet Plans :</a> &nbsp;
+                <a class="options" href="lowcarbs.html">Low Carbs</a> &nbsp; &nbsp;
+                <a class="options" href="ultralowfats.html">Ultra Low Fats</a> &nbsp; &nbsp;
+                <a class="options" href="paleo.html">Paleo</a>
+                <br> <br>
+                &nbsp; <a class="bottom" href="Workouts.html">Workouts :</a>&nbsp;
+                <a class="options" href="Endurance-workouts.html"> Endurance</a> &nbsp;&nbsp;
+                <a class="options" href="Flexibitlity-workouts.html"> Flexibility</a> &nbsp;&nbsp;
+                <a class="options" href="Strength-workouts.html">Strength</a> &nbsp;&nbsp;
+                <br> <br>
+                &nbsp; <a class="bottom" href="BMI.html">BMI Converter</a>&nbsp;
+                <br> <br>
+                &nbsp; <a class="bottom" href="FAQ.html">FAQ</a>
+                <br> <br>
+            </td>
+
+            <td>
+                <p class="quote">Love yourself enough to live a healthy lifestyle.</p>
+                <br>
+                <p class="bottom">Copyrights &copy; 2019 Leafy Life </p>
+                <a href="https://www.facebook.com">
+                    <img alt="Facebook" src="facebook.png" width="30" height="30"></a>
+                <a href="https://www.instagram.com">
+                    <img alt="Instagram" src="insta.png" width="30" height="30"></a>
+                <a href="https://www.twitter.com">
+                    <img alt="Twitter" src="twitter.PNG" width="30" height="30"></a>
+                <br>
+            </td>
+
+
+
+
+        </table>
+
+
+
+    </footer>
+</body>
+
+</html>
